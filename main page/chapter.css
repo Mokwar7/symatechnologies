@@ -1,0 +1,143 @@
+.chapter {
+    background: #F5F7FA;
+    padding: 76px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chapter__container {
+    max-width: 1300px;
+    width: 97.5%;
+}
+
+.chapter__header {
+    text-align: center;
+    color: #4D4D4D;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 122%;
+    margin: 0;
+}
+
+.chapter__cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    row-gap: 79px;
+    margin-top: 70px;
+}
+
+.chapter__block {
+    width: 524px;
+    min-height: 195px;
+    background-color: #fff;
+    padding: 32px 54px;
+}
+
+.chapter__main {
+    color: #1B3764;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.48px;
+    margin: 0;
+}
+
+.chapter__text {
+    margin: 14px 0 26px;
+    color: #969AA0;
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: -0.19px;
+}
+
+.chapter__plus {
+    display: inline-block;
+    font-size: 24px;
+    color: #1B3764;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.48px;
+    margin: 0 90px 0 0;
+}
+
+.chapter__plus:last-of-type {
+    margin-right: 0;
+}
+
+.chapter__plus::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #5D9EFE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 13px;
+}
+
+@media screen and (max-width: 1340px) {
+    .chapter__block {
+        width: 40%;
+        padding: 24px 36px;
+    }
+
+    .chapter__plus {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .chapter__header {
+        font-size: 28px;
+    }
+
+    .chapter__block {
+        padding: 12px 24px;
+    }
+
+    .chapter__plus {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .chapter__plus:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .chapter__header {
+        font-size: 24px;
+    }
+
+    .chapter__block {
+        width: 95%;
+        text-align: center;
+    }
+
+    .chapter__plus {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .chapter__plus:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .chapter__text {
+        font-size: 16px;
+    }
+
+    .chapter__plus {
+        font-size: 18px;
+    }
+
+    .chapter__plus::before {
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+    }
+}
