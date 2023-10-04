@@ -1,0 +1,171 @@
+.main {
+    background-image: url('./src/mainBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: calc((100vh) - 89px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main__container {
+    width: 1340px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    align-items: center;
+}
+
+.main__content {
+    color: #fff;
+    width: 614px;
+}
+
+.main__img {
+    width: 619px;
+    height: 645px;
+    object-fit: contain;
+}
+
+.main__welc {
+    font-size: 24px;
+    line-height: 154.5%;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -0.48px;
+    margin: 0;
+}
+
+.main__header {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -1.3px;
+    margin: 16px 0 0;
+    width: 100%;
+}
+
+.main__welc-tire {
+    margin: 0;
+    margin-right: 15px;
+    color: #00B2FF;
+}
+
+.main__about {
+    color: #B4C7E7;
+    font-size: 19px;
+    line-height: 180%;
+    letter-spacing: -0.19px;
+    font-weight: 300;
+    margin: 32px 0 69px;
+    width: 100%;
+}
+
+.main__start {
+    padding: 20px 53px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 13px 12px 0px #022054;
+    text-decoration: none;
+    color: #29A0F5;
+    transition: 0.3s ease-in-out;
+}
+
+.main__start:hover {
+    opacity: 0.7;
+}
+
+.main__demo {
+    margin-left: 37px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    text-underline-offset: 3px;
+}
+
+.main__demo:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1350px) {
+    .main__container {
+        max-width: 1340px;
+    }
+
+    .main__content {
+        width: 550px;
+    }
+
+    .main__img {
+        width: 35vw;
+    }
+
+    .main__welc {
+        font-size: 22px;
+    }
+
+    .main__header {
+        font-size: 60px;
+    }
+
+    .main__about {
+        font-size: 18px;
+    }
+
+    .main__start {
+        padding: 18px 48px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .main__img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        align-items: start;
+        min-height: 600px;
+    }
+
+    .main__container {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main__content {
+        width: 90%;
+        text-align: center;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__welc {
+        font-size: 16px;
+    }
+
+    .main__welc-tire {
+        margin-right: 5px;
+    }
+
+    .main__header {
+        font-size: 40px;
+        margin-top: 25px;
+    }
+
+    .main__about {
+        font-size: 16px;
+    }
+
+    .main__start {
+        margin-bottom: 20px;
+    }
+    
+    .main__demo {
+        margin-left: 0;
+    }
+}
